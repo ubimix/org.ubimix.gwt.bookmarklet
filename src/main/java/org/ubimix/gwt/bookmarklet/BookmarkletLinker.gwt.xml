@@ -1,0 +1,19 @@
+<module>
+    <inherits name="com.google.gwt.core.Core" />
+    <inherits name="com.google.gwt.user.User" />
+    <inherits name="com.google.gwt.user.History" />
+    <inherits name="com.google.gwt.http.HTTP" />
+    <inherits name="com.google.gwt.i18n.I18N" />
+    <inherits name="com.google.gwt.uibinder.UiBinder" />
+    <inherits name="com.google.gwt.json.JSON" />
+    <inherits name="com.google.gwt.http.HTTP" />
+    <stylesheet src="UbimixBookmarklet-reset.css" />
+    <stylesheet src="UbimixBookmarklet-fonts.css" />
+    <stylesheet src="UbimixBookmarklet-base.css" />
+    <stylesheet src="gwt/chrome/chrome.css" />
+    <source path="client" />
+    <source path="shared" />
+    <script src="js/xdm/easyXDM.js" />
+    <define-linker name="BookmarkletLinker"
+        class="org.ubimix.gwt.bookmarklet.linker.BookmarkletLinker" />
+</module>

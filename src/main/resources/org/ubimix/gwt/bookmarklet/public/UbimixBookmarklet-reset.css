@@ -1,0 +1,109 @@
+/*
+ Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+ Code licensed under the BSD License:
+ http://developer.yahoo.net/yui/license.txt
+ version: 2.8.0r4
+ */
+/**
+ * YUI Reset
+ * @module reset
+ * @namespace
+ * @requires
+ */
+.UbimixBookmarkletStyle {
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*
+     Set the z-index to maximal possible value to be sure that the bookmarklet is 
+     shown on the top of all other elements.
+     See http://stackoverflow.com/questions/491052/mininum-and-maximum-value-of-z-index.
+    */
+    z-index: 2147483647;
+}
+
+.UbimixBookmarkletStyle * {
+    color: black;
+    text-align: left;
+    border: none;
+}
+
+.UbimixBookmarkletStyle div,.UbimixBookmarkletStyle dl,.UbimixBookmarkletStyle dt,.UbimixBookmarkletStyle dd,.UbimixBookmarkletStyle ul,.UbimixBookmarkletStyle ol,.UbimixBookmarkletStyle li,.UbimixBookmarkletStyle h1,.UbimixBookmarkletStyle h2,.UbimixBookmarkletStyle h3,.UbimixBookmarkletStyle h4,.UbimixBookmarkletStyle h5,.UbimixBookmarkletStyle h6,.UbimixBookmarkletStyle pre,.UbimixBookmarkletStyle code,.UbimixBookmarkletStyle form,.UbimixBookmarkletStyle fieldset,.UbimixBookmarkletStyle legend,.UbimixBookmarkletStyle input,.UbimixBookmarkletStyle button,.UbimixBookmarkletStyle textarea,.UbimixBookmarkletStyle p,.UbimixBookmarkletStyle blockquote,.UbimixBookmarkletStyle th,.UbimixBookmarkletStyle td
+    {
+    margin: 0;
+    padding: 0;
+}
+
+.UbimixBookmarkletStyle table,.UbimixBookmarkletStyle tr,.UbimixBookmarkletStyle td,.UbimixBookmarkletStyle th
+    {
+    border-collapse: collapse;
+    border-spacing: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+.UbimixBookmarkletStyle fieldset,.UbimixBookmarkletStyle img {
+    border: 0;
+}
+
+.UbimixBookmarkletStyle address,.UbimixBookmarkletStyle caption,.UbimixBookmarkletStyle cite,.UbimixBookmarkletStyle code,.UbimixBookmarkletStyle dfn,.UbimixBookmarkletStyle em,.UbimixBookmarkletStyle strong,.UbimixBookmarkletStyle th,.UbimixBookmarkletStyle var,.UbimixBookmarkletStyle optgroup
+    {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.UbimixBookmarkletStyle del,.UbimixBookmarkletStyle ins {
+    text-decoration: none;
+}
+
+.UbimixBookmarkletStyle li {
+    list-style: none;
+}
+
+.UbimixBookmarkletStyle caption,.UbimixBookmarkletStyle th {
+    text-align: left;
+}
+
+.UbimixBookmarkletStyle h1,.UbimixBookmarkletStyle h2,.UbimixBookmarkletStyle h3,.UbimixBookmarkletStyle h4,.UbimixBookmarkletStyle h5,.UbimixBookmarkletStyle h6
+    {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.UbimixBookmarkletStyle q:before,.UbimixBookmarkletStyle q:after {
+    content: '';
+}
+
+.UbimixBookmarkletStyle abbr,.UbimixBookmarkletStyle acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+.UbimixBookmarkletStyle sup {
+    vertical-align: baseline;
+}
+
+.UbimixBookmarkletStyle sub {
+    vertical-align: baseline;
+}
+
+/*because legend doesn't inherit in IE */
+.UbimixBookmarkletStyle legend {
+    color: #000;
+}
+
+.UbimixBookmarkletStyle input,.UbimixBookmarkletStyle button,.UbimixBookmarkletStyle textarea,.UbimixBookmarkletStyle select,.UbimixBookmarkletStyle optgroup,.UbimixBookmarkletStyle option
+    {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+/* @purpose To enable resizing for IE */
+/* @branch For IE6-Win, IE7-Win */
+.UbimixBookmarkletStyle input,.UbimixBookmarkletStyle button,.UbimixBookmarkletStyle textarea,.UbimixBookmarkletStyle select
+    {
+    *font-size: 100%;
+}

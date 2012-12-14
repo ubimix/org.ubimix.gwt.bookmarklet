@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+    <title></title>
+    <meta http-equiv="CACHE-CONTROL" content="PUBLIC"/>
+    <meta http-equiv="EXPIRES" content="Sat, 01 Jan 2050 00:00:00 GMT"/>
+    <script type="text/javascript" src="./js/xdm/easyXDM.min.js">
+    </script>
+    <script type="text/javascript">
+        window.jsonLibUrl = "./js/xdm/json2.js";
+    </script>
+    <body>
+        <script type="text/javascript">
+            function postData(url, data, callback){
+                try {
+                    var request = null;
+                    if (window.XMLHttpRequest) {
+                        request = new XMLHttpRequest();
+                    }
+                    else {
+                        if (window.ActiveXObject) {
+                            request = new ActiveXObject("Msxml2.XMLHTTP");
+                            if (!request) {
+                                request = new ActiveXObject("Microsoft.XMLHTTP");
+                            }
+                        }
+                    }
+                    if (request) {
+                        request.onreadystatechange = function(){
+                            try {
+                                var readyState = request.readyState;
+                                if (readyState == 4) {
+                                    if ((request.status / 100) == 2) 
+                                        callback.onSuccess(request.status, request.responseText);
+                                    else {
+                                        callback.onFailure(request.status, request.statusText, null);
+                                    }
+                                }
+                            } 
+                            catch (e) {
+                                alert(e + "");
+                            }
+                        };
+                        var asynchronous = true;
+                        request.open("post", url, asynchronous);
+                        request.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+                        request.setRequestHeader("Accept", "application/json");
+                        request.send(data);
+                    }
+                    else {
+                        callback.onFailure(-1, "Not supported browser.", null);
+                    }
+                } 
+                catch (e) {
+                    callback.onFailure(-1, "Error.", e);
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            easyXDM.DomHelper.requiresJSON(window.jsonLibUrl);
+            var socket = new easyXDM.Socket({
+                onMessage: function(message, origin){
+                    var json = JSON.parse(message);
+                    var serviceURL = json.serviceURL;
+                    var data = json.data;
+                    var requestId = json.requestId;
+                    
+                    var callback = {
+                        onSuccess: function(code, content){
+                            socket.postMessage(JSON.stringify({
+                                requestId: requestId,
+                                code: code,
+                                data: JSON.parse(content)
+                            }));
+                        },
+                        onFailure: function(code, message, error){
+                            socket.postMessage(JSON.stringify({
+                                requestId: requestId,
+                                code: code,
+                                errorMessage: message,
+                                error: error ? error + "" : undefined
+                            }));
+                        }
+                    };
+                    var dataStr = data ? JSON.stringify(data) : "{}";
+                    postData(serviceURL, dataStr, callback);
+                }
+            });
+        </script>
+    </body>
+</html>

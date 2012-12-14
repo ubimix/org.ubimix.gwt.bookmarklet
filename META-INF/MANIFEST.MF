@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ClassPath: .
+Bundle-SymbolicName: org.ubimix.gwt.bookmarklet
+Bundle-Name: org.ubimix.gwt.bookmarklet
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Version: 0.1.0
+Bundle-ManifestVersion: 2
+Bundle-Description: Bookmarklet Libraries
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0

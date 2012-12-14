@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>__MODULE_NAME__ Bookmarklet.</title>
+    </head>
+    <body>
+        <h1>__MODULE_NAME__ Bookmarklet</h1>
+        <p>
+            <a id="bookmarklet" href="javascript:__BOOKMARKLET_CODE__">__MODULE_NAME__ Bookmarklet</a>
+            - you can drag-n-drop this reference 
+            on the toolbar of your browser. 
+        </p>
+            <script>
+               var base = document.location + "";
+               var idx = base.lastIndexOf("/");
+               if (idx > 0) {
+                  base = base.substring(0, idx + 1);
+               }
+               var e = document.getElementById("bookmarklet");
+               var url = e.href;
+               url = url.replace(/\.\.\/__MODULE_NAME__\//gi, base);
+               e.href = url;                
+            </script> 
+        
+    </body>
+</html>

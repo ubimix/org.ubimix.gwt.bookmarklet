@@ -1,0 +1,1119 @@
+/**
+ * The file contains styles for GWT widgets in the chrome theme, in RTL mode.
+ *
+ * In order to maintain cross-browser compatibility, the following syntax is
+ * used to create IE6 specific style rules:
+ *    .gwt-Widget {
+ *      property: rule applies to all browsers
+ *      -property: rule applies only to IE6 (overrides previous rule)
+ *    }
+ *    * html .gwt-Widget {
+ *      property: rule applies to all versions of IE
+ *    }
+ */
+/**
+ * The reference theme can be used to determine when this style sheet has
+ * loaded.  Create a hidden div element with absolute position, assign the style
+ * name below, and attach it to the DOM.  Use a timer to detect when the
+ * element's height and width are set to 5px.
+ */
+.UbimixBookmarkletStyle .gwt-Reference-chrome-rtl {
+  height: 5px;
+  width: 5px;
+  zoom: 1;
+}
+
+.UbimixBookmarkletStyle .gwt-Button {
+  margin: 0;
+  padding: 3px 5px;
+  text-decoration: none;
+  font-size: small;
+  cursor: pointer;
+  cursor: hand;
+  background: url("images/hborder.png") repeat-x 0px -27px;
+  border: 1px outset #ccc;
+}
+.UbimixBookmarkletStyle .gwt-Button:active {
+  border: 1px inset #ccc;
+}
+.UbimixBookmarkletStyle .gwt-Button:hover {
+  border-color: #9cf #69e #69e #7af;
+}
+.UbimixBookmarkletStyle .gwt-Button[disabled] {
+  cursor: default;
+  color: #888;
+}
+.UbimixBookmarkletStyle .gwt-Button[disabled]:hover {
+  border: 1px outset #ccc;
+}
+
+.UbimixBookmarkletStyle .gwt-CheckBox {
+}
+.UbimixBookmarkletStyle .gwt-CheckBox-disabled {
+  color: #888;
+}
+
+.UbimixBookmarkletStyle .gwt-DecoratorPanel {
+}
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .topCenter,
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .bottomCenter {
+  background: url(images/hborder.png) repeat-x;
+}
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .middleLeft,
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .middleRight {
+  background: url(images/vborder.png) repeat-y;
+}
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .topLeftInner,
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .topRightInner,
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .bottomLeftInner,
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .bottomRightInner {
+  width: 5px;
+  height: 5px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .topLeft {
+  background: url(images/corner.png) no-repeat 0px 0px;
+  -background: url(images/corner_ie6.png) no-repeat 0px 0px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .topRight {
+  background: url(images/corner.png) no-repeat -5px 0px;
+  -background: url(images/corner_ie6.png) no-repeat -5px 0px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .bottomLeft {
+  background: url(images/corner.png) no-repeat 0px -5px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -5px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratorPanel .bottomRight {
+  background: url(images/corner.png) no-repeat -5px -5px;
+  -background: url(images/corner_ie6.png) no-repeat -5px -5px;
+}
+* html .UbimixBookmarkletStyle .gwt-DecoratorPanel .topLeftInner,
+* html .UbimixBookmarkletStyle .gwt-DecoratorPanel .topRightInner,
+* html .UbimixBookmarkletStyle .gwt-DecoratorPanel .bottomLeftInner,
+* html .UbimixBookmarkletStyle .gwt-DecoratorPanel .bottomRightInner {
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+}
+
+.UbimixBookmarkletStyle.gwt-DialogBox .Caption {
+  background: #ebebeb url(images/hborder.png) repeat-x 0px -2003px;
+  padding: 4px 8px 4px 4px;
+  cursor: default;
+  border-bottom: 1px solid #bbbbbb;
+  border-top: 5px solid #e3e3e3;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogContent {
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogMiddleCenter {
+  padding: 3px;
+  background: white;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogBottomCenter {
+  background: url(images/hborder.png) repeat-x 0px -4px;
+  -background: url(images/hborder_ie6.png) repeat-x 0px -4px;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogMiddleLeft {
+  background: url(images/vborder.png) repeat-y;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogMiddleRight {
+  background: url(images/vborder.png) repeat-y -4px 0px;
+  -background: url(images/vborder_ie6.png) repeat-y -4px 0px;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogTopLeftInner {
+  width: 5px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogTopRightInner {
+  width: 8px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogBottomLeftInner {
+  width: 5px;
+  height: 8px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogBottomRightInner {
+  width: 5px;
+  height: 8px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogTopLeft {
+  background: url(images/corner.png) no-repeat -13px 0px;
+  -background: url(images/corner_ie6.png) no-repeat -13px 0px;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogTopRight {
+  background: url(images/corner.png) no-repeat -18px 0px;
+  -background: url(images/corner_ie6.png) no-repeat -18px 0px;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogBottomLeft {
+  background: url(images/corner.png) no-repeat 0px -15px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -15px;
+}
+.UbimixBookmarkletStyle.gwt-DialogBox .dialogBottomRight {
+  background: url(images/corner.png) no-repeat -5px -15px;
+  -background: url(images/corner_ie6.png) no-repeat -5px -15px;
+}
+* html .UbimixBookmarkletStyle.gwt-DialogBox .dialogTopLeftInner {
+  width: 5px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle.gwt-DialogBox .dialogTopRightInner {
+  width: 8px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle.gwt-DialogBox .dialogBottomLeftInner {
+  width: 5px;
+  height: 8px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle.gwt-DialogBox .dialogBottomRightInner {
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.UbimixBookmarkletStyle .gwt-DisclosurePanel {
+}
+.UbimixBookmarkletStyle .gwt-DisclosurePanel-open {
+}
+.UbimixBookmarkletStyle .gwt-DisclosurePanel-closed {
+}
+.UbimixBookmarkletStyle .gwt-DisclosurePanel .header,
+.UbimixBookmarkletStyle .gwt-DisclosurePanel .header a,
+.UbimixBookmarkletStyle .gwt-DisclosurePanel .header td {
+  text-decoration: none;  /* Remove underline from header */
+  color: black; 
+  cursor: pointer;
+  cursor: hand;
+}
+.UbimixBookmarkletStyle .gwt-DisclosurePanel .content {
+  border-right: 3px solid #e3e3e3;
+  padding: 4px 8px 4px 0px;
+  margin-right: 6px;
+}
+
+.UbimixBookmarkletStyle .gwt-FileUpload {
+}
+
+.UbimixBookmarkletStyle .gwt-Frame {
+  border-top: 2px solid #666;
+  border-left: 2px solid #666;
+  border-right: 2px solid #bbb;
+  border-bottom: 2px solid #bbb;
+}
+
+.UbimixBookmarkletStyle .gwt-HorizontalSplitPanel {
+}
+.UbimixBookmarkletStyle .gwt-HorizontalSplitPanel .hsplitter {
+  cursor: move;
+  border: 0px; 
+  background: #91c0ef url(images/vborder.png) repeat-y;
+}
+.UbimixBookmarkletStyle .gwt-VerticalSplitPanel {
+}
+.UbimixBookmarkletStyle .gwt-VerticalSplitPanel .vsplitter {
+  cursor: move;
+  border: 0px; 
+  background: #91c0ef url(images/hborder.png) repeat-x;
+}
+
+.UbimixBookmarkletStyle .gwt-HTML {
+}
+
+.UbimixBookmarkletStyle .gwt-Hyperlink {
+}
+
+.UbimixBookmarkletStyle .gwt-Image {
+}
+
+.UbimixBookmarkletStyle .gwt-Label {
+}
+
+.UbimixBookmarkletStyle .gwt-ListBox {
+}
+
+.UbimixBookmarkletStyle .gwt-MenuBar {
+  cursor: default;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar .gwt-MenuItem {
+  cursor: default;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar .gwt-MenuItem-selected {
+  background: #cdcdcd;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-horizontal {
+  background: #ebebeb url(images/hborder.png) repeat-x 0px -2003px;
+  border: 1px solid #BBBBBB;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-horizontal .gwt-MenuItem {
+  padding: 0px 10px;
+  vertical-align: bottom;
+  color: #666666;
+  font-weight: bold;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-horizontal .gwt-MenuItemSeparator {
+  width: 1px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  border-right: 1px solid #888888;
+  background: white;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-horizontal .gwt-MenuItemSeparator .menuSeparatorInner {
+  width: 1px;
+  height: 1px;
+  background: white; 
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-vertical {
+  margin-top: 0px;
+  margin-right: 0px;
+  background: white;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-vertical table {
+  border-collapse: collapse;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-vertical .gwt-MenuItem {
+  padding: 4px 1px 4px 14px;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-vertical .gwt-MenuItemSeparator {
+  padding: 2px 0px;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-vertical .gwt-MenuItemSeparator .menuSeparatorInner {
+  height: 1px;
+  padding: 0px;
+  border: 0px;
+  border-top: 1px solid #777777;
+  background: #ddddee;
+  overflow: hidden;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-vertical .subMenuIcon {
+  padding-left: 4px;
+}
+.UbimixBookmarkletStyle .gwt-MenuBar-vertical .subMenuIcon-selected {
+  background: #cdcdcd;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup {
+  margin: 0px 3px 0px 0px;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupTopCenter {
+  background: url(images/hborder.png) 0px -12px repeat-x;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupBottomCenter {
+  background: url(images/hborder.png) 0px -13px repeat-x;
+  -background: url(images/hborder_ie6.png) 0px -13px repeat-x;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupMiddleLeft {
+  background: url(images/vborder.png) -12px 0px repeat-y;
+  -background: url(images/vborder_ie6.png) -12px 0px repeat-y;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupMiddleRight {
+  background: url(images/vborder.png) -13px 0px repeat-y;
+  -background: url(images/vborder_ie6.png) -13px 0px repeat-y;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupTopLeftInner {
+  width: 5px;
+  height: 5px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupTopRightInner {
+  width: 8px;
+  height: 5px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupBottomLeftInner {
+  width: 5px;
+  height: 8px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupBottomRightInner {
+  width: 8px;
+  height: 8px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupTopLeft {
+  background: url(images/corner.png) no-repeat 0px -36px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -36px;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupTopRight {
+  background: url(images/corner.png) no-repeat -5px -36px;
+  -background: url(images/corner_ie6.png) no-repeat -5px -36px;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupBottomLeft {
+  background: url(images/corner.png) no-repeat 0px -41px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -41px;
+}
+.UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupBottomRight {
+  background: url(images/corner.png) no-repeat -5px -41px;
+  -background: url(images/corner_ie6.png) no-repeat -5px -41px;
+}
+* html .UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupTopLeftInner {
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupTopRightInner {
+  width: 8px;
+  height: 5px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupBottomLeftInner {
+  width: 5px;
+  height: 8px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle .gwt-MenuBarPopup .menuPopupBottomRightInner {
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.UbimixBookmarkletStyle .gwt-PasswordTextBox {
+  padding: 2px;
+}
+.UbimixBookmarkletStyle .gwt-PasswordTextBox-readonly {
+  color: #888;
+}
+
+.UbimixBookmarkletStyle.gwt-PopupPanel {
+  border: 3px solid #e3e3e3;
+  padding: 3px;
+  background: white;
+}
+
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupContent {
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupMiddleCenter {
+  padding: 3px;
+  background: #e3e3e3;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupTopCenter {
+  background: url(images/hborder.png) repeat-x;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupBottomCenter {
+  background: url(images/hborder.png) repeat-x 0px -4px;
+  -background: url(images/hborder_ie6.png) repeat-x 0px -4px;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupMiddleLeft {
+  background: url(images/vborder.png) repeat-y;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupMiddleRight {
+  background: url(images/vborder.png) repeat-y -4px 0px;
+  -background: url(images/vborder_ie6.png) repeat-y -4px 0px;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupTopLeftInner {
+  width: 5px;
+  height: 5px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupTopRightInner {
+  width: 8px;
+  height: 5px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupBottomLeftInner {
+  width: 5px;
+  height: 8px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupBottomRightInner {
+  width: 8px;
+  height: 8px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupTopLeft {
+  background: url(images/corner.png) no-repeat 0px -10px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -10px;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupTopRight {
+  background: url(images/corner.png) no-repeat -5px -10px;
+  -background: url(images/corner_ie6.png) no-repeat -5px -10px;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupBottomLeft {
+  background: url(images/corner.png) no-repeat 0px -15px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -15px;
+}
+.UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupBottomRight {
+  background: url(images/corner.png) no-repeat -5px -15px;
+  -background: url(images/corner_ie6.png) no-repeat -5px -15px;
+}
+* html .UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupTopLeftInner {
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupTopRightInner {
+  width: 8px;
+  height: 5px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupBottomLeftInner {
+  width: 5px;
+  height: 8px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle.gwt-DecoratedPopupPanel .popupBottomRightInner {
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.UbimixBookmarkletStyle.gwt-PopupPanelGlass {
+  background-color: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.UbimixBookmarkletStyle .gwt-PushButton-up,
+.UbimixBookmarkletStyle .gwt-PushButton-up-hovering,
+.UbimixBookmarkletStyle .gwt-PushButton-up-disabled,
+.UbimixBookmarkletStyle .gwt-PushButton-down,
+.UbimixBookmarkletStyle .gwt-PushButton-down-hovering,
+.UbimixBookmarkletStyle .gwt-PushButton-down-disabled {
+  margin: 0;
+  text-decoration: none;
+  background: url("images/hborder.png") repeat-x 0px -27px;
+}
+.UbimixBookmarkletStyle .gwt-PushButton-up,
+.UbimixBookmarkletStyle .gwt-PushButton-up-hovering,
+.UbimixBookmarkletStyle .gwt-PushButton-up-disabled {
+  padding: 3px 5px 3px 5px;
+}
+.UbimixBookmarkletStyle .gwt-PushButton-up {
+  border: 1px outset #ccc;
+  cursor: pointer;
+  cursor: hand;
+}
+.UbimixBookmarkletStyle .gwt-PushButton-up-hovering {
+  border: 1px outset;
+  border-color: #9cf #69e #69e #7af;
+  cursor: pointer;
+  cursor: hand;
+}
+.UbimixBookmarkletStyle .gwt-PushButton-up-disabled {
+  border: 1px outset #ccc;
+  cursor: default;
+  opacity: .5;
+  filter: alpha(opacity=40);
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-PushButton-down,
+.UbimixBookmarkletStyle .gwt-PushButton-down-hovering,
+.UbimixBookmarkletStyle .gwt-PushButton-down-disabled {
+  padding: 4px 4px 2px 6px;
+}
+.UbimixBookmarkletStyle .gwt-PushButton-down {
+  border: 1px inset #666;
+  cursor: pointer;
+  cursor: hand;
+}
+.UbimixBookmarkletStyle .gwt-PushButton-down-hovering {
+  border: 1px inset;
+  border-color: #9cf #69e #69e #7af;
+  cursor: pointer;
+  cursor: hand;
+}
+.UbimixBookmarkletStyle .gwt-PushButton-down-disabled {
+  border: 1px outset #ccc;
+  cursor: default;
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  zoom: 1;
+}
+
+.UbimixBookmarkletStyle .gwt-RadioButton {
+}
+.UbimixBookmarkletStyle .gwt-RadioButton-disabled {
+  color: #888;
+}
+
+.UbimixBookmarkletStyle .gwt-RichTextArea {
+}
+.hasRichTextToolbar {
+  border: 0px;
+}
+.UbimixBookmarkletStyle .gwt-RichTextToolbar {
+  background: #ebebeb url(images/hborder.png) repeat-x 0px -2003px;
+  border-bottom: 1px solid #BBBBBB;
+  padding: 3px;
+  margin: 0px;
+}
+.UbimixBookmarkletStyle .gwt-RichTextToolbar .gwt-PushButton-up {
+  padding: 0px 0px 0px 1px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  border-width: 1px; 
+}
+.UbimixBookmarkletStyle .gwt-RichTextToolbar .gwt-PushButton-up-hovering {
+  margin-left: 4px;
+  margin-bottom: 4px;
+  padding: 0px 0px 0px 1px;
+  border-width: 1px; 
+}
+.UbimixBookmarkletStyle .gwt-RichTextToolbar .gwt-PushButton-down {
+  margin-left: 4px;
+  margin-bottom: 4px;
+  padding: 0px 1px 0px 0px;
+  border-width: 1px; 
+}
+.UbimixBookmarkletStyle .gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+  margin-left: 4px;
+  margin-bottom: 4px;
+  padding: 0px 1px 0px 0px;
+  border-width: 1px; 
+}
+.UbimixBookmarkletStyle .gwt-RichTextToolbar .gwt-ToggleButton-up {
+  margin-left: 4px;
+  margin-bottom: 4px;
+  padding: 0px 0px 0px 1px;
+  border-width: 1px;
+}
+.UbimixBookmarkletStyle .gwt-RichTextToolbar .gwt-ToggleButton-up-hovering {
+  margin-left: 4px;
+  margin-bottom: 4px;
+  padding: 0px 0px 0px 1px;
+  border-width: 1px;
+}
+.UbimixBookmarkletStyle .gwt-RichTextToolbar .gwt-ToggleButton-down {
+  margin-left: 4px;
+  margin-bottom: 4px;
+  padding: 0px 1px 0px 0px;
+  border-width: 1px;
+}
+.UbimixBookmarkletStyle .gwt-RichTextToolbar .gwt-ToggleButton-down-hovering {
+  margin-left: 4px;
+  margin-bottom: 4px;
+  padding: 0px 1px 0px 0px;
+  border-width: 1px;
+}
+
+.UbimixBookmarkletStyle .gwt-StackPanel {
+  border-bottom: 1px solid #bbbbbb;
+}
+.UbimixBookmarkletStyle .gwt-StackPanel .gwt-StackPanelItem {
+  cursor: pointer;
+  cursor: hand;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 3px;
+  border: 1px solid #bbbbbb;
+  border-bottom: 0px;
+  background: #d3def6 url(images/hborder.png) repeat-x 0px -989px;
+}
+.UbimixBookmarkletStyle .gwt-StackPanel .gwt-StackPanelContent {
+  border: 1px solid #bbbbbb;
+  border-bottom: 0px;
+  background: white;
+  padding: 2px 2px 10px 5px;
+}
+
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel {
+  border-bottom: 1px solid #bbbbbb;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .gwt-StackPanelContent {
+  border: 1px solid #bbbbbb;
+  border-bottom: 0px;
+  background: white;
+  padding: 2px 5px 10px 2px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .gwt-StackPanelItem {
+  cursor: pointer;
+  cursor: hand;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemTopLeft,
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemTopRight {
+  height: 6px;
+  width: 6px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemTopLeft {
+  border-left: 1px solid #bbbbbb;
+  background: #e4e4e4 url(images/corner.png) no-repeat 0px -49px;
+  -background: #e4e4e4 url(images/corner_ie6.png) no-repeat 0px -49px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemTopRight {
+  border-right: 1px solid #bbbbbb;
+  background: #e4e4e4 url(images/corner.png) no-repeat -6px -49px;
+  -background: #e4e4e4 url(images/corner_ie6.png) no-repeat -6px -49px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemTopLeftInner,
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemTopRightInner {
+  width: 1px;
+  height: 1px;
+}
+* html .UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemTopLeftInner,
+* html .UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemTopRightInner {
+  width: 6px;
+  height: 6px;
+  overflow: hidden;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemTopCenter {
+  background: url(images/hborder.png) 0px -21px repeat-x;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemMiddleLeft {
+  background: #d3def6 url(images/hborder.png) repeat-x 0px -989px;
+  border-left: 1px solid #bbbbbb;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemMiddleLeftInner,
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemMiddleRightInner {
+  width: 1px;
+  height: 1px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemMiddleRight {
+  background: #d3def6 url(images/hborder.png) repeat-x 0px -989px;
+  border-right: 1px solid #bbbbbb;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .stackItemMiddleCenter {
+  font-weight: bold;
+  font-size: 1.3em;
+  background: #d3def6 url(images/hborder.png) repeat-x 0px -989px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .gwt-StackPanelItem-first .stackItemTopRight,
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .gwt-StackPanelItem-first .stackItemTopLeft {
+  border: 0px;
+  background-color: white;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .gwt-StackPanelItem-below-selected .stackItemTopLeft,
+.UbimixBookmarkletStyle .gwt-DecoratedStackPanel .gwt-StackPanelItem-below-selected .stackItemTopRight {
+  background-color: white;
+}
+
+.UbimixBookmarkletStyle .gwt-SuggestBox {
+  padding: 2px;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup {
+  margin-right: 3px;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .item {
+  padding: 2px 6px;
+  color: #424242;
+  cursor: default;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .item-selected {
+  background: #cdcdcd;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupContent {
+  background: white;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupTopCenter {
+  background: url(images/hborder.png) repeat-x;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupBottomCenter {
+  background: url(images/hborder.png) repeat-x 0px -4px;
+  -background: url(images/hborder_ie6.png) repeat-x 0px -4px;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupMiddleLeft {
+  background: url(images/vborder.png) repeat-y;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupMiddleRight {
+  background: url(images/vborder.png) repeat-y -4px 0px;
+  -background: url(images/vborder_ie6.png) repeat-y -4px 0px;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupTopLeftInner {
+  width: 5px;
+  height: 5px;
+  zoom: 1;  
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupTopRightInner {
+  width: 8px;
+  height: 5px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupBottomLeftInner {
+  width: 5px;
+  height: 8px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupBottomRightInner {
+  width: 8px;
+  height: 8px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupTopLeft {
+  background: url(images/corner.png) no-repeat 0px -23px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -23px;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupTopRight {
+  background: url(images/corner.png) no-repeat -5px -23px;
+  -background: url(images/corner_ie6.png) no-repeat -5px -23px;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupBottomLeft {
+  background: url(images/corner.png) no-repeat 0px -28px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -28px;
+}
+.UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupBottomRight {
+  background: url(images/corner.png) no-repeat -5px -28px;
+  -background: url(images/corner_ie6.png) no-repeat -5px -28px;
+}
+* html .UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupTopLeftInner {
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupTopRightInner {
+  width: 8px;
+  height: 5px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupBottomLeftInner {
+  width: 5px;
+  height: 8px;
+  overflow: hidden;
+}
+* html .UbimixBookmarkletStyle .gwt-SuggestBoxPopup .suggestPopupBottomRightInner {
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.UbimixBookmarkletStyle .gwt-TabBar {
+}
+.UbimixBookmarkletStyle .gwt-TabBar .gwt-TabBarFirst {
+  width: 5px;  /* first tab distance from the left */
+}
+.UbimixBookmarkletStyle .gwt-TabBar .gwt-TabBarRest {
+}
+.UbimixBookmarkletStyle .gwt-TabBar .gwt-TabBarItem {
+  margin-left: 6px;
+  padding: 3px 6px 3px 6px;
+  cursor: pointer;
+  cursor: hand;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  background: #e3e3e3;
+}
+.UbimixBookmarkletStyle .gwt-TabBar .gwt-TabBarItem-selected {
+  cursor: default;
+  background: #bcbcbc;
+} 
+.UbimixBookmarkletStyle .gwt-TabBar .gwt-TabBarItem-disabled {
+  cursor: default;
+  color: #999999;
+}
+.UbimixBookmarkletStyle .gwt-TabPanel {
+}
+.UbimixBookmarkletStyle .gwt-TabPanelBottom {
+  border-color: #bcbcbc;
+  border-style: solid;
+  border-width: 3px 2px 2px;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar {
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .gwt-TabBarFirst {
+  width: 5px;  /* first tab distance from the left */
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .gwt-TabBarRest {
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .gwt-TabBarItem {
+  border-collapse: collapse;
+  margin-right: 6px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabTopCenter {
+  padding: 0px;
+  background: #e3e3e3;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabTopLeft,
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabTopRight {
+  padding: 0px;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabTopLeftInner,
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabTopRightInner {
+  width: 6px;
+  height: 6px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabTopLeft {
+  background: url(images/corner.png) no-repeat 0px -55px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -55px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabTopRight {
+  background: url(images/corner.png) no-repeat -6px -55px;
+  -background: url(images/corner_ie6.png) no-repeat -6px -55px;
+}
+* html .UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabTopLeftInner,
+* html .UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabTopRightInner {
+  width: 6px;
+  height: 6px;
+  overflow: hidden;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabMiddleLeft,
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabMiddleRight {
+  width: 6px;
+  padding: 0px;
+  background: #e3e3e3 url(images/hborder.png) repeat-x 0px -1463px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabMiddleLeftInner,
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabMiddleRightInner {
+  width: 1px;
+  height: 1px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .tabMiddleCenter {
+  padding: 0px 4px 2px 4px;
+  cursor: pointer;
+  cursor: hand;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  background: #e3e3e3 url(images/hborder.png) repeat-x 0px -1463px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopCenter {
+  background: #747474;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopLeft {
+  background-position: 0px -61px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabTopRight {
+  background-position: -6px -61px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleLeft,
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleRight {
+  background: #bcbcbc url(images/hborder.png) repeat-x 0px -2511px;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .gwt-TabBarItem-selected .tabMiddleCenter {
+  cursor: default;
+  background: #bcbcbc url(images/hborder.png) repeat-x 0px -2511px;
+  color: white;
+}
+.UbimixBookmarkletStyle .gwt-DecoratedTabBar .gwt-TabBarItem-disabled .tabMiddleCenter {
+  cursor: default;
+  color: #999999;
+}
+
+.UbimixBookmarkletStyle .gwt-TextArea {
+  padding: 2px;
+}
+.UbimixBookmarkletStyle .gwt-TextArea-readonly {
+  color: #888;
+}
+
+.UbimixBookmarkletStyle .gwt-TextBox {
+  padding: 2px;
+}
+.UbimixBookmarkletStyle .gwt-TextBox-readonly {
+  color: #888;
+}
+
+.UbimixBookmarkletStyle .gwt-ToggleButton-up,
+.UbimixBookmarkletStyle .gwt-ToggleButton-up-hovering,
+.UbimixBookmarkletStyle .gwt-ToggleButton-up-disabled,
+.UbimixBookmarkletStyle .gwt-ToggleButton-down,
+.UbimixBookmarkletStyle .gwt-ToggleButton-down-hovering,
+.UbimixBookmarkletStyle .gwt-ToggleButton-down-disabled {
+  margin: 0;
+  text-decoration: none;
+  background: url("images/hborder.png") repeat-x 0px -27px;
+}
+.UbimixBookmarkletStyle .gwt-ToggleButton-up,
+.UbimixBookmarkletStyle .gwt-ToggleButton-up-hovering,
+.UbimixBookmarkletStyle .gwt-ToggleButton-up-disabled {
+  padding: 3px 5px 3px 5px;
+}
+.UbimixBookmarkletStyle .gwt-ToggleButton-up {
+  border: 1px outset #ccc;
+  cursor: pointer;
+  cursor: hand;
+}
+.UbimixBookmarkletStyle .gwt-ToggleButton-up-hovering {
+  border: 1px outset;
+  border-color: #9cf #69e #69e #7af;
+  cursor: pointer;
+  cursor: hand;
+}
+.UbimixBookmarkletStyle .gwt-ToggleButton-up-disabled {
+  border: 1px outset #ccc;
+  cursor: default;
+  opacity: .5;
+  zoom: 1;
+  filter: alpha(opacity=40);
+}
+.UbimixBookmarkletStyle .gwt-ToggleButton-down,
+.UbimixBookmarkletStyle .gwt-ToggleButton-down-hovering,
+.UbimixBookmarkletStyle .gwt-ToggleButton-down-disabled {
+  padding: 4px 4px 2px 6px;
+}
+.UbimixBookmarkletStyle .gwt-ToggleButton-down {
+  background-position: 0 -513px;
+  border: 1px inset #ccc;
+  cursor: pointer;
+  cursor: hand;
+}
+.UbimixBookmarkletStyle .gwt-ToggleButton-down-hovering {
+  background-position: 0 -513px;
+  border: 1px inset;
+  border-color: #9cf #69e #69e #7af;
+  cursor: pointer;
+  cursor: hand;
+}
+.UbimixBookmarkletStyle .gwt-ToggleButton-down-disabled {
+  background-position: 0 -513px;
+  border: 1px inset #ccc;
+  cursor: default;
+  opacity: .5;
+  zoom: 1;
+  filter: alpha(opacity=40);
+}
+
+.UbimixBookmarkletStyle .gwt-Tree .gwt-TreeItem {
+  padding: 1px 0px;
+  margin: 0px;
+  white-space: nowrap;
+  cursor: hand;
+  cursor: pointer;
+  zoom: 1;
+}
+.UbimixBookmarkletStyle .gwt-Tree .gwt-TreeItem-selected {
+  background: #93c2f1 url(images/hborder.png) repeat-x 0px -1463px;
+}
+.UbimixBookmarkletStyle .gwt-TreeItem .gwt-RadioButton input,
+.UbimixBookmarkletStyle .gwt-TreeItem .gwt-CheckBox input {
+  margin-right: 0px;
+}
+* html .UbimixBookmarkletStyle .gwt-TreeItem .gwt-RadioButton input,
+* html .UbimixBookmarkletStyle .gwt-TreeItem .gwt-CheckBox input {
+  margin-right: -4px;
+}
+
+.UbimixBookmarkletStyle .gwt-DateBox input {
+  width: 8em;
+}
+.dateBoxFormatError {
+  background: #eed6d6;
+}
+.dateBoxPopup {
+}
+
+.UbimixBookmarkletStyle .gwt-DatePicker {
+  border: 1px solid #888;
+  cursor: default;
+}
+.UbimixBookmarkletStyle .gwt-DatePicker td,
+.datePickerMonthSelector td:focus {
+  outline: none
+}
+.datePickerDays {
+  width: 100%;
+  background: white;
+}
+.datePickerDay,
+.datePickerWeekdayLabel,
+.datePickerWeekendLabel {
+  font-size: 75%;
+  text-align: center;
+  padding: 4px;
+  outline: none;
+}
+.datePickerWeekdayLabel,
+.datePickerWeekendLabel {
+  background: #c1c1c1;
+  padding: 0px 4px 2px;
+  cursor: default;
+}
+.datePickerDay {
+  padding: 4px;
+  cursor: hand;
+  cursor: pointer;
+}
+.datePickerDayIsToday {
+  border: 1px solid black;
+  padding: 3px;
+}
+.datePickerDayIsWeekend {
+  background: #EEEEEE;
+}
+.datePickerDayIsFiller {
+  color: #888888;
+}
+.datePickerDayIsValue {
+  background: #abf;
+}
+.datePickerDayIsDisabled {
+  color: #AAAAAA;
+  font-style: italic;
+}
+.datePickerDayIsHighlighted {
+  background: #dde;
+}
+.datePickerDayIsValueAndHighlighted {
+  background: #ccf;
+}
+.datePickerMonthSelector {
+  background: #c1c1c1;
+  width: 100%;
+}
+td.datePickerMonth {
+  text-align: center;
+  vertical-align: center;
+  white-space: nowrap;
+  font-size: 70%;
+  font-weight: bold;
+}
+.datePickerPreviousButton,
+.datePickerNextButton {
+  font-size: 120%;
+  line-height: 1em;
+  cursor: hand;
+  cursor: pointer;
+  padding: 0px 4px;
+}
+
+.UbimixBookmarkletStyle .gwt-StackLayoutPanel {
+  border-bottom: 1px solid #bbbbbb;
+}
+.UbimixBookmarkletStyle .gwt-StackLayoutPanel .gwt-StackLayoutPanelHeader {
+  cursor: pointer;
+  cursor: hand;
+  border: 1px solid #bbbbbb;
+  border-bottom: 0px;
+  background: #d3def6 url(images/hborder.png) repeat-x 0px -989px;
+
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 3px;
+  text-align: center;
+}
+.UbimixBookmarkletStyle .gwt-StackLayoutPanel .gwt-StackLayoutPanelContent {
+  border: 1px solid #bbbbbb;
+  border-bottom: 0px;
+  background: white;
+  padding: 2px 5px 10px 2px;
+}
+
+.UbimixBookmarkletStyle .gwt-TabLayoutPanel {
+}
+.UbimixBookmarkletStyle .gwt-TabLayoutPanel .gwt-TabLayoutPanelTabs {
+}
+.UbimixBookmarkletStyle .gwt-TabLayoutPanel .gwt-TabLayoutPanelContent {
+  border-color: #bcbcbc;
+  border-style: solid;
+  border-width: 3px 2px 2px;
+  overflow: hidden;
+  padding: 6px;
+}
+.UbimixBookmarkletStyle .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab {
+  margin-left: 6px;
+  padding: 3px 6px 3px 6px;
+  cursor: pointer;
+  cursor: hand;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  background: #e3e3e3;
+}
+.UbimixBookmarkletStyle .gwt-TabLayoutPanel .gwt-TabLayoutPanelTab-selected {
+  cursor: default;
+  background: #bcbcbc;
+} 
+
+.UbimixBookmarkletStyle .gwt-SplitLayoutPanel-HDragger {
+  background: white url(images/splitPanelThumb.png) center center no-repeat;
+  cursor: col-resize;
+}
+
+.UbimixBookmarkletStyle .gwt-SplitLayoutPanel-VDragger {
+  background: white url(images/splitPanelThumb.png) center center no-repeat;
+  cursor: row-resize;
+}
